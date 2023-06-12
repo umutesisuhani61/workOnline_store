@@ -79,7 +79,7 @@ class CategoryController extends Controller
         if (!$category) {
             return response('<error>Category not found.</error>', 404, ['Content-Type' => 'application/xml']);
         }
-
+// validation
         $request->validate([
             'name' => 'required',
         ]);
